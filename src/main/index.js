@@ -14,6 +14,7 @@ function createMainWindow() {
 
   if (isDevelopment) {
     window.webContents.openDevTools()
+    // console.log(aaaString())
   }
 
   if (isDevelopment) {
