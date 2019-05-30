@@ -1,0 +1,26 @@
+{
+  "name": "electron-webpack-quick-start-roy",
+  "version": "0.0.1",
+  "license": "BSD3",
+  "description": "sample electron project",
+  "homepage": "https://github.com/roycrippen/electron-webpack-quick-start-roy",
+  "author": {
+    "name": "Roy Crippen",
+    "email": "roycrippen@gmail.com"
+  },
+  "scripts": {
+    "dev": "electron-webpack dev",
+    "h": "electron-webpack --help",
+    "compile": "electron-webpack",
+    "dist": "yarn compile && electron-builder"
+  },
+  "dependencies": {
+    "source-map-support": "^0.5.10"
+  },
+  "devDependencies": {
+    "electron": "4.0.1",
+    "electron-builder": "20.38.4",
+    "electron-webpack": "^2.6.2",
+    "webpack": "4.28.4"
+  }
+}
