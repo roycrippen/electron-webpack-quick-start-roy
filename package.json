@@ -1,7 +1,7 @@
 {
   "name": "electron-webpack-quick-start-roy",
   "version": "0.0.1",
-  "license": "BSD3",
+  "license": "BSD-3-Clause",
   "description": "sample electron project",
   "homepage": "https://github.com/roycrippen/electron-webpack-quick-start-roy",
   "author": {
@@ -12,7 +12,7 @@
     "dev": "electron-webpack dev",
     "h": "electron-webpack --help",
     "compile": "electron-webpack",
-    "dist": "yarn compile && electron-builder"
+    "dist": "npm run compile && electron-builder --linux"
   },
   "dependencies": {
     "source-map-support": "^0.5.10"
@@ -24,5 +24,16 @@
     "electron-webpack-ts": "^3.2.0",
     "typescript": "^3.5.1",
     "webpack": "4.28.4"
+  },
+  "build": {
+    "appId": "electron-webpack-quick-start-roy",
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "synopsis": "todo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "description": "todo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "category": "Electron; TypeScript"
+    }
   }
 }
